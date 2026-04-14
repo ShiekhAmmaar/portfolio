@@ -31,24 +31,24 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    <img scr={'logo'} alt="logo" />
+                    <img src={logo} alt="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" >
-                    <span classname= "navbar-toggle-icon"></span>
+                    <span className= "navbar-toggle-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home" className={activeLink == 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link href="#skills" className={activeLink == 'skills' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink == 'projects' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                    <Nav className="ms-auto">
+                        <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                        <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+                        <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     </Nav>
-                    <span classname="navbar-text">
-                        <div classname="social-icon">
-                            <a href="#"><img src={'navIcon1'} alt="" /></a>
-                            <a href="#"><img src={'navIcon2'} alt="" /></a>
-                            <a href="#"><img src={'navicon3'} alt="" /></a>
+                    <span className="navbar-text">
+                        <div className="social-icon">
+                            <a href="#"><img src={navIcon1} alt="" /></a>
+                            <a href="#"><img src={navIcon2} alt="" /></a>
+                            <a href="#"><img src={navIcon3} alt="" /></a>
                         </div>
-                        <button classname="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                        <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>
